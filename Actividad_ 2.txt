@@ -1,0 +1,13 @@
+const int ledPin = 2;
+
+// Parámetros
+const int freq = 5000;
+const int resolution = 8;
+
+void setup() {
+  ledcAttach(ledPin, freq, resolution);
+}
+
+void loop() {
+  ledcWrite(ledPin, 128);
+}
